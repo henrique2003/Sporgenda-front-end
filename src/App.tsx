@@ -1,11 +1,10 @@
 import React from 'react'
-import './App.css'
+import './global.css'
+import Routes from './routes'
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-
-    </div>
+    <Routes />
   )
 }
 
