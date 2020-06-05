@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import ScheduleItem from './components/ScheduleItem/index'
 
 const Schedule: React.FC = () => {
   return (
@@ -8,18 +9,11 @@ const Schedule: React.FC = () => {
         <h3>Agenda</h3>
       </div>
       <div className="row">
-        <div className="row_schedules">
-          <div className="card">
-            <div className="content">
-              <h4>Fevereiro</h4>
-              <p>Corrida livre e rápida</p>
-              <div className="row">
-                <span>Dia: 02</span>
-                <span>Horário: 18:20</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ScheduleItem />
+        <ScheduleItem />
+        <ScheduleItem />
+        <ScheduleItem />
+        <ScheduleItem />
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
 .wrapper_schedules .wrapper_title {
   max-width: 300px;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 .wrapper_schedules .wrapper_title h3 {
@@ -11,6 +12,11 @@
   border-bottom: 1px solid #4fd43b;
   padding-bottom: 5px;
   margin-bottom: 25px;
+}
+
+.wrapper_schedules .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* Tablets */
