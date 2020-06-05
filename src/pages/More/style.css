@@ -58,6 +58,7 @@
 }
 
 .wrapper_more .wrapper_more_card form .wrapper_more_form_input input {
+  color: rgba(0, 0, 0, 0.7);
   border: none;
   background: rgba(196, 196, 196, 0.8);
   flex: 2;
