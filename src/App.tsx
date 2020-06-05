@@ -1,6 +1,6 @@
 import React from 'react'
-import './global.css'
 import Routes from './routes'
+import './global.css'
 
 const App: React.FC = () => {
   return (

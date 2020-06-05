@@ -10,9 +10,10 @@ interface Props {
     time: string
     title: string
   }
+  link: boolean
 }
 
-const ScheduleItem: React.FC<Props> = ({ schedule }) => {
+const ScheduleItem: React.FC<Props> = ({ schedule, link }) => {
   const { month, _id, day, time, title } = schedule
 
   return (
@@ -26,7 +27,7 @@ const ScheduleItem: React.FC<Props> = ({ schedule }) => {
           <span>Dia: {day <= 10 ? `0${day}` : day }</span>
           <span>Horário: {time}</span>
         </section>
-        <Link to={`/mais/${_id}`}>Saiba mais...</Link>
+        {link ? <Link to={`/mais/${_id}`}>Saiba mais...</Link> : ''}
       </div>
     </div>
   )
