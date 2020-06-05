@@ -77,3 +77,35 @@
     font-size: 18px;
   }
 }
+
+/* Celphones */
+@media (max-width: 428px) {
+  .schedule {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .schedule .content .card_header h4 {
+    font-size: 19px;
+  }
+
+  .schedule .content .card_header .green_point {
+    width: 7px;
+    height: 7px;
+    margin-right: 18px;
+  }
+
+  .schedule .content p {
+    font-size: 17px;
+    margin-bottom: 13px;
+  }
+
+  .schedule .content section {
+    margin-bottom: 13px;
+    font-size: 17px;
+  }
+
+  .schedule .content a {
+    font-size: 17px;
+  }
+}
