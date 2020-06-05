@@ -41,6 +41,10 @@
 
 /* Ipad pro */
 @media (max-width: 1050px) {
+  .wrapper_home .container {
+    padding: 0 100px;
+  }
+
   .wrapper_home .container .row .warapper_text {
     margin-top: 8%;
   }
@@ -52,5 +56,19 @@
   .wrapper_home .container .row .warapper_text p {
     margin-top: 10px;
     font-size: 17px;
+  }
+}
+
+/* Big tablets */
+@media (max-width: 1050px) {
+  .wrapper_home .container {
+    padding: 0 50px;
+  }
+}
+
+/* Ipad */
+@media (max-width: 1050px) {
+  .wrapper_home .container {
+    padding: 0 50px;
   }
 }
