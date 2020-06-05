@@ -19,10 +19,21 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* Change grid */
+@media (max-width: 1200px) {
+  .wrapper_schedules .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Tablets */
 @media (max-width: 768px) {
   .wrapper_schedules .wrapper_title h3 {
     font-size: 25px;
+  }
+
+  .wrapper_schedules .row {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
