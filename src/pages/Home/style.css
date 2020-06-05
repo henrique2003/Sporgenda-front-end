@@ -38,3 +38,19 @@
   width: 100%;
   height: 100%;
 }
+
+/* Ipad pro */
+@media (max-width: 1050px) {
+  .wrapper_home .container .row .warapper_text {
+    margin-top: 8%;
+  }
+
+  .wrapper_home .container .row .warapper_text h1 {
+    font-size: 30px;
+  }
+
+  .wrapper_home .container .row .warapper_text p {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+}
