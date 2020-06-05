@@ -9,11 +9,34 @@ const Schedule: React.FC = () => {
         <h3>Agenda</h3>
       </div>
       <div className="row">
-        <ScheduleItem />
-        <ScheduleItem />
-        <ScheduleItem />
-        <ScheduleItem />
-        <ScheduleItem />
+        <ScheduleItem schedule={{
+          _id: '1j35o',
+          day: 2,
+          month: 'Fevereiro',
+          time: '19:30',
+          title: 'Corrida para jovens'
+        }} />
+        <ScheduleItem schedule={{
+          _id: '1j35o',
+          day: 2,
+          month: 'Fevereiro',
+          time: '19:30',
+          title: 'Corrida para jovens'
+        }} />
+        <ScheduleItem schedule={{
+          _id: '1j35o',
+          day: 2,
+          month: 'Fevereiro',
+          time: '19:30',
+          title: 'Corrida para jovens'
+        }} />
+        <ScheduleItem schedule={{
+          _id: '1j35o',
+          day: 2,
+          month: 'Fevereiro',
+          time: '19:30',
+          title: 'Corrida para jovens'
+        }} />
       </div>
     </div>
   )
