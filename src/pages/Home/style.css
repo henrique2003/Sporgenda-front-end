@@ -66,9 +66,21 @@
   }
 }
 
-/* Ipad */
-@media (max-width: 1050px) {
-  .wrapper_home .container {
-    padding: 0 50px;
+/* Tablets */
+@media (max-width: 768px) {
+  .wrapper_home {
+    margin: 20px 0;
+  }
+
+  .wrapper_home .container .row {
+    flex-direction: column;
+  }
+
+  .wrapper_home .container .row .warapper_text h1 {
+    font-size: 30px;
+  }
+
+  .wrapper_home .container .row .wrapper_image {
+    margin: 30px 50px 20px 0;
   }
 }
