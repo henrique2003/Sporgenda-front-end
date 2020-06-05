@@ -1,3 +1,23 @@
 .wrapper_more {
-  margin: 30px 100px;
+  margin: 50px 150px;
+}
+/* Ipad pro */
+@media (max-width: 1050px) {
+  .wrapper_more {
+    margin: 50px 100px;
+  }
+}
+
+/* Big tablets */
+@media (max-width: 900px) {
+  .wrapper_more {
+    margin: 30px 50px;
+  }
+}
+
+/* Celphones */
+@media (max-width: 428px) {
+  .wrapper_more {
+    margin: 30px 25px;
+  }
 }
