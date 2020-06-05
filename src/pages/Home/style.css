@@ -84,3 +84,19 @@
     margin: 30px 50px 20px 0;
   }
 }
+
+/* Bid Celphones */
+@media (max-width: 600px) {
+  .wrapper_home .container .row .warapper_text h1 {
+    font-size: 25px;
+  }
+
+  .wrapper_home .container .row .warapper_text p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+
+  .wrapper_home .container .row .wrapper_image {
+    margin: 20px 0 20px 0;
+  }
+}
