@@ -6,61 +6,15 @@
   padding: 0 150px;
 }
 
-.wrapper_home .container .row {
-  display: flex;
-}
-
-.wrapper_home .container .row .warapper_text {
-  margin-top: 10%;
-  flex: 1;
-}
-
-.wrapper_home .container .row .warapper_text h1 {
-  color: #4fd43b;
-  font-weight: 300;
-  font-size: 35px;
-}
-
-.wrapper_home .container .row .warapper_text p {
-  margin-top: 15px;
-  color: rgba(0, 0, 0, 0.6);
-  font-family: "Poppins", sans-serif;
-  line-height: 26px;
-  font-weight: 300;
-  font-size: 19px;
-}
-
-.wrapper_home .container .row .wrapper_image {
-  flex: 1;
-}
-
-.wrapper_home .container .row .wrapper_image img {
-  width: 100%;
-  height: 100%;
-}
-
 /* Ipad pro */
 @media (max-width: 1050px) {
   .wrapper_home .container {
     padding: 0 100px;
   }
-
-  .wrapper_home .container .row .warapper_text {
-    margin-top: 8%;
-  }
-
-  .wrapper_home .container .row .warapper_text h1 {
-    font-size: 30px;
-  }
-
-  .wrapper_home .container .row .warapper_text p {
-    margin-top: 10px;
-    font-size: 17px;
-  }
 }
 
 /* Big tablets */
-@media (max-width: 1050px) {
+@media (max-width: 900px) {
   .wrapper_home .container {
     padding: 0 50px;
   }
@@ -70,33 +24,5 @@
 @media (max-width: 768px) {
   .wrapper_home {
     margin: 20px 0;
-  }
-
-  .wrapper_home .container .row {
-    flex-direction: column;
-  }
-
-  .wrapper_home .container .row .warapper_text h1 {
-    font-size: 30px;
-  }
-
-  .wrapper_home .container .row .wrapper_image {
-    margin: 30px 50px 20px 0;
-  }
-}
-
-/* Bid Celphones */
-@media (max-width: 600px) {
-  .wrapper_home .container .row .warapper_text h1 {
-    font-size: 25px;
-  }
-
-  .wrapper_home .container .row .warapper_text p {
-    margin-top: 5px;
-    font-size: 16px;
-  }
-
-  .wrapper_home .container .row .wrapper_image {
-    margin: 20px 0 20px 0;
   }
 }
