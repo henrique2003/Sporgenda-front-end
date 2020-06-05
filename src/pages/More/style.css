@@ -1,10 +1,34 @@
 .wrapper_more {
   margin: 50px 150px;
 }
+
+.wrapper_more .wrapper_more_card {
+  padding: 60px 80px;
+  border: 1px solid #4fd43b;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.wrapper_more .wrapper_more_card .wrapper_more_header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper_more .wrapper_more_card .wrapper_more_header h3 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+}
+
 /* Ipad pro */
 @media (max-width: 1050px) {
   .wrapper_more {
     margin: 50px 100px;
+  }
+
+  .wrapper_more .wrapper_more_card .wrapper_more_header h3 {
+    font-size: 23px;
   }
 }
 
@@ -13,11 +37,39 @@
   .wrapper_more {
     margin: 30px 50px;
   }
+
+  .wrapper_more .wrapper_more_card {
+    padding: 40px 60px;
+    margin-top: 30px;
+  }
+
+  .wrapper_more .wrapper_more_card .wrapper_more_header h3 {
+    font-size: 22px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .wrapper_more .wrapper_more_card {
+    padding: 40px 50px;
+  }
+
+  .wrapper_more .wrapper_more_card .wrapper_more_header h3 {
+    font-size: 21px;
+  }
 }
 
 /* Celphones */
 @media (max-width: 428px) {
+  .wrapper_more .wrapper_more_card {
+    padding: 40px;
+  }
+
   .wrapper_more {
     margin: 30px 25px;
+  }
+
+  .wrapper_more .wrapper_more_card .wrapper_more_header h3 {
+    font-size: 19px;
   }
 }
