@@ -24,7 +24,7 @@ const ScheduleItem: React.FC<Props> = ({ schedule, link }) => {
         </div>
         <p>{title}</p>
         <section>
-          <span>Dia: {day <= 10 ? `0${day}` : day }</span>
+          <span>Dia: {day <= 10 ? `0${day}` : day}</span>
           <span>Horário: {time}</span>
         </section>
         {link ? <Link to={`/mais/${_id}`}>Saiba mais...</Link> : ''}
