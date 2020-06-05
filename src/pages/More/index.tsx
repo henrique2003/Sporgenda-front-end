@@ -24,6 +24,7 @@ interface Schedule {
 
 const More: React.FC<Props> = ({ match }) => {
   const [Input, setInput] = useState<string>('')
+  const [Alert, setAlert] = useState<string>('')
   const [Schedule, setSchedule] = useState<Schedule>({
     _id: '123m23jmj123',
     title: 'Lotem ipsum',
@@ -65,6 +66,8 @@ const More: React.FC<Props> = ({ match }) => {
       const res = await api.put(`/agenda/${_id}`, { name: Input })
 
       setSchedule(res.data)
+      setAlert('Entrou com sucesso!')
+      setInput('')
     } catch (error) {
       console.log(error.message)
     }
@@ -90,6 +93,7 @@ const More: React.FC<Props> = ({ match }) => {
           <div className="wrapper_more_form_header">
             <div></div><p>Nome completo:</p>
           </div>
+          {<p className="alert_success">{Alert}</p>}
           <div className="wrapper_more_form_input">
             <input
               type="text"

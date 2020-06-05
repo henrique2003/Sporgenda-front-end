@@ -1,3 +1,10 @@
+/* Alert success */
+.alert_success {
+  color: #49be36;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 .wrapper_more {
   margin: 50px 150px;
 }
