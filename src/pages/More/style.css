@@ -30,7 +30,53 @@
 
 /* Card Form */
 .wrapper_more .wrapper_more_card form {
-  display: none;
+  margin-top: 40px;
+}
+
+.wrapper_more .wrapper_more_card form .wrapper_more_form_header {
+  margin-top: 60px;
+  display: flex;
+}
+
+.wrapper_more .wrapper_more_card form .wrapper_more_form_header div {
+  width: 11px;
+  height: 11px;
+  background: #4fd43b;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.wrapper_more .wrapper_more_card form .wrapper_more_form_header p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 17px;
+}
+
+.wrapper_more .wrapper_more_card form .wrapper_more_form_input {
+  margin-top: 15px;
+  display: flex;
+}
+
+.wrapper_more .wrapper_more_card form .wrapper_more_form_input input {
+  border: none;
+  background: rgba(196, 196, 196, 0.8);
+  flex: 2;
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+
+.wrapper_more .wrapper_more_card form .wrapper_more_form_input button {
+  font-weight: bold;
+  margin-left: 10px;
+  flex: 1;
+  background: rgba(79, 212, 59, 0.9);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-left: 30px;
+  cursor: pointer;
 }
 
 /* Change grid information  */
@@ -81,6 +127,30 @@
   /* Card Body */
   .wrapper_more .wrapper_more_card .wrapper_more_body .wraper_information {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .wrapper_more .wrapper_more_card form .wrapper_more_form_input button {
+    font-size: 16px;
+  }
+}
+
+/* Big Celphones */
+@media (max-width: 600px) {
+  .wrapper_more .wrapper_more_card form .wrapper_more_form_input {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper_more .wrapper_more_card form .wrapper_more_form_input input {
+    flex: 1;
+  }
+
+  .wrapper_more .wrapper_more_card form .wrapper_more_form_input button {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 10px;
   }
 }
 

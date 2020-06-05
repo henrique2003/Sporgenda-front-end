@@ -33,8 +33,11 @@ const More: React.FC<Props> = ({ match }) => {
           <div className="wrapper_more_form_header">
             <div></div><p>Nome completo:</p>
           </div>
-          <div className="wrapper_more_form_content">
-            <input type="text"/> <button type="submit">Participar</button>
+          <div className="wrapper_more_form_input">
+            <input
+              type="text"
+              placeholder="Ex: Henrique de melo Cristioglu"
+            /> <button type="submit">Participar</button>
           </div>
         </form>
       </div>
