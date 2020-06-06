@@ -11,7 +11,7 @@ interface Props {
   className?: string
 }
 
-const FormInput: React.FC<Props> = ({ type, placeholder, title, className }) => {
+const FormInput: React.FC<Props> = ({ type, placeholder, title, className, onChange, name }) => {
   return (
     <div className={`wrapper_input ${className ?? ''}`}>
       <header>
@@ -20,6 +20,9 @@ const FormInput: React.FC<Props> = ({ type, placeholder, title, className }) => 
       <input
         type={type}
         placeholder={placeholder}
+        required={true}
+        name={name}
+        onChange={(e) => onChange(e)}
       />
     </div>
   )
