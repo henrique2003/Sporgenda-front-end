@@ -15,14 +15,19 @@ interface Schedules {
 const Schedule: React.FC = () => {
   const [Schedules, setSchedules] = useState<Schedules[]>([])
   const [Error, setError] = useState<boolean>(false)
+  const [Loading, setLoading] = useState<boolean>(false)
 
   useEffect(() => {
     async function loadSchedules (): Promise<void> {
       try {
+        setError(false)
+        setLoading(true)
         const res = await api.get('/agenda')
 
+        setLoading(false)
         setSchedules(res.data)
       } catch (error) {
+        setLoading(false)
         setError(true)
       }
     }
@@ -36,6 +41,7 @@ const Schedule: React.FC = () => {
         <h3>Agenda</h3>
       </div>
       {Error ? <p className="alert">Não há nenhum horário no momento!</p> : ''}
+      {Loading ? <p className="alert">Carregando...</p> : ''}
       <div className="row">
         {Schedules.map(schedule => (
           <ScheduleItem key={schedule._id} schedule={schedule} link={true} />
