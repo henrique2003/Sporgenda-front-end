@@ -11,6 +11,7 @@ const Introduction: React.FC = () => {
           <div className="content">
             <h1>Querendo se exercitar ?</h1>
             <p>Escolha qualquer horário e vá praticar esportes com outras pessoas. É de graça e sem qualquer restrição</p>
+            <strong>Avenida vasconcelos, 1051</strong>
           </div>
         </div>
         <div className="wrapper_image">
