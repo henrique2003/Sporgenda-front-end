@@ -86,6 +86,13 @@ const Admin: React.FC<RouteComponentProps<any>> = ({ history }) => {
       }
       setSearching(true)
 
+      const res = await api.post('/agenda', FormData, {
+        headers: {
+          Authorization: localStorage.getItem('token')
+        }
+      })
+
+      setSchedules([...Schedules, res.data])
       setSearching(false)
     } catch (error) {
       console.log(error.message)
@@ -113,7 +120,7 @@ const Admin: React.FC<RouteComponentProps<any>> = ({ history }) => {
             <FormInput
               name="location"
               placeholder="Ex: Quadra de corrida"
-              title="Localização:"
+              title="Local:"
               type="text"
               value={location}
               onChange={(e: SyntheticEvent) => onChange(e)}
