@@ -29,3 +29,53 @@
   margin-top: 10px;
   border: none;
 }
+
+/* Ipad Pro */
+@media (max-width: 1050px) {
+  .wrapper_input header {
+    margin-top: 20px;
+  }
+}
+
+/* Big Celhpnes */
+@media (max-width: 600px) {
+  /* Form label */
+  .wrapper_input header {
+    margin-top: 20px;
+  }
+
+  .wrapper_input header p {
+    font-size: 17px !important;
+  }
+
+  .wrapper_input header div {
+    width: 10px;
+    height: 10px;
+    margin-top: 5px !important;
+  }
+  /* End form label */
+
+  .wrapper_input input {
+    font-size: 16px;
+    margin-top: 7px;
+  }
+}
+
+/* Big Celhpnes */
+@media (max-width: 428px) {
+  /* Form label */
+  .wrapper_input header {
+    margin-top: 15px;
+  }
+
+  .wrapper_input header p {
+    font-size: 16px !important;
+  }
+  /* End form label */
+
+  .wrapper_input input {
+    padding: 8px 15px;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+}
