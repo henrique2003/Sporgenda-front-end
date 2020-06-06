@@ -1,4 +1,4 @@
-import React, { useEffect, useState, FormEventHandler, FormEvent } from 'react'
+import React, { useEffect, useState, FormEvent } from 'react'
 import BackArrow from '../../components/BackArrow'
 import LineInformation from './components/LineInformation/index'
 import './style.css'
